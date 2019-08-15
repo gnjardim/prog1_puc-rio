@@ -1,0 +1,6 @@
+COMUM,Diario de Viagem,Necessaire,Necessaire,Diario de Viagem,Toalhinha de mao,Diario de Viagem,Toalhinha de mao
+BRONZE,Mascara,Mascara,Mascara,Porta Trecos,Mascara,Porta Trecos,Porta Trecos
+PRATA,Kit Boa Viagem,Kit Boa Viagem,Kit Higiene,Kit Boa Viagem,Kit Higiene,Kit Boa Viagem,Kit Boa Viagem
+OURO,Estojo,Pantufa Sapato,Kit Descanso,Pantufa Sapato,Pantufa Sapato,Pantufa Sapato,Kit Descanso
+DIAMANTE,Kit Bolsa de Viagem,Kit Almofada,Kit Bolsa de Viagem,Kit Almofada,Kit Bolsa de Viagem,Kit Almofada,Kit Almofada
+SAFIRA,Mala P,Bolsa Maleta,Mochila,Bolsa Maleta,Mochila,Mochila,Bolsa Maleta

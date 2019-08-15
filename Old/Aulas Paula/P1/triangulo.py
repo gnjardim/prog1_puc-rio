@@ -1,0 +1,15 @@
+import turtle
+
+bob=turtle.Turtle()
+bob.shape('arrow')
+bob.color('darkblue')
+bob.width(10)
+bob.begin_fill()
+bob.fillcolor('red')
+bob.fd(100)
+bob.left(120)
+bob.fd(100)
+bob.left(120)
+bob.fd(100)
+bob.left(120)
+bob.end_fill()

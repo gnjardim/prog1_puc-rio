@@ -1,0 +1,5 @@
+Matricula:10 Media:7.6 P1:8.0 T15.8
+Matricula:20 Media:4.6 P1:3.9 T17.6
+Matricula:30 Media:9.6 P1:9.8 T19.0
+Matricula:40 Media:4.4 P1:3.2 T19.3
+Matricula:50 Media:5.6 P1:4.8 T18.9

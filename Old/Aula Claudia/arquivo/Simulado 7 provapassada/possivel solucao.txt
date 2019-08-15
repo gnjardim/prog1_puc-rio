@@ -1,0 +1,89 @@
+def lePresentes():
+    arq=open("Presentes.txt","r")
+    lPre=[]
+    for linha in arq:
+        linha=linha.strip()
+        el=linha.split(',')
+        lPre.append([el[0],el[1:]])
+    arq.close()
+    return lPre     
+
+def leClientes():            
+    arq=open("Clientes.txt","r")
+    lCli=[]
+    for linha in arq:
+        linha=linha.strip()
+        el=linha.split('\t')
+        lCli.append(el)
+    arq.close()
+    return lCli
+
+def calculaDiaSemana(dtVoo): # dd/mm/aaaa
+    Mes = int(dtVoo[3:5])
+    Ano = int(dtVoo[6:])
+    Dia = int(dtVoo[:2])
+    A = int((12 - Mes)/ 10)
+    B = Ano - A
+    C = Mes + (12 * A)
+    D = int(B / 100)
+    E = int(D / 4)
+    F = 2 - D + E
+    G = int(365.25 * B)
+    H = int(30.6001 * (C + 1))
+    I = F + G + H + Dia + 5
+    J = I % 7
+    return J
+
+def busca(l,proc):
+    for i,el in enumerate(l):
+        if el[0] == proc:
+            return i
+    return -1
+
+def mesmoDiaMes(dtVoo,dtAniv):
+    '''recebe duas datas e retorna True  quando o dia e mês das duas datas são iguais ou False caso contrário.'''
+    return ((dtVoo[3:5]== dtAniv[3:5]) and (dtVoo[:2]==dtAniv[:2]))
+    
+def determinaFidelidade( Pass,lCli):
+    '''que recebe os dados de um passageiro e a lista de Clientes.
+    Esta função retorna a lista do cliente, caso este passageiro tenha direito a receber um presente
+    ou uma lista vazia, caso contrário'''
+    cpf=Pass[0]
+    dtVoo=Pass[2]
+    pos=busca(lCli,cpf)
+    if pos != -1:
+        if mesmoDiaMes(dtVoo,lCli[pos][3]):
+           return lCli[pos] # lista do clientepos
+    return [] # -1
+
+def Presenteados(lPre,lCli):
+    arq=open("OcupacaoVoos.txt","r")
+    tot=[0]*7
+    for linha in arq:
+        linha=linha.strip()
+        el=linha.split(' ')
+        cpf=el[0]
+        dt=el[2]
+        
+        cliente = determinaFidelidade(el,lCli)
+        if cliente: # lista não vazia
+            nFid = busca(lPre,cliente[2])
+            ndia=calculaDiaSemana(dt)
+            
+            print("%s %s %s"%(cliente[0],cliente[1],lPre[nFid][1][ndia]))
+            tot[ndia]+=1
+    arq.close()
+    return tot
+
+def exibeTotais(tot):
+    ds=['sab','dom','seg','ter','qua','qui','sex']
+    for i,el in enumerate(ds):
+        print("%s - %d presentes"%(el,tot[i])) 
+    return
+
+
+
+lPre=lePresentes()
+lCli=leClientes()
+tot=Presenteados(lPre,lCli)
+exibeTotais(tot)
