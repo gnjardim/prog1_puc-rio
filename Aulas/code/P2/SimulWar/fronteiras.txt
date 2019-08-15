@@ -1,0 +1,20 @@
+Alemanha,Austria,França,Holanda,Polonia
+Austria,Alemanha,Eslovaquia,Hungria,Italia,Balcas
+Bulgaria,Turquia,Balcas,Romenia
+Eslovaquia,Polonia,Hungria,Austria,Ucrania
+Espanha,França,Italia
+Finlandia,Russia,Noruega,Bielorussia
+França,Alemanha,Espanha,Reino Unido,Italia
+Grecia,Turquia,Balcas,Italia
+Hungria,Romenia,Balcas,Austria,Eslovaquia,Ucrania
+Italia,Grecia,França,Austria,Espanha,Balcas
+Noruega,Alemanha,Finlandia,Reino Unido,Russia
+Holanda,Alemanha,Reino Unido,Noruega
+Polonia,Bielorussia,Alemanha,Ucrania,Russia
+Reino Unido,França,Holanda,Noruega
+Romenia,Ucrania,Balcas,Hungria,Turquia
+Russia,Bielorussia,Ucrania,Turquia,Finlandia,Noruega
+Balcas,Turquia,Grecia,Italia,Romenia,Hungria,Austria
+Turquia,Balcas,Russia,Romenia,Ucrania,Grecia
+Ucrania,Bielorussia,Russia,Polonia,Hungria,Eslovaquia,Romenia,Turquia
+Bielorussia,Polonia,Ucrania,Russia

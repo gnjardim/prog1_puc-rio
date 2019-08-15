@@ -1,0 +1,20 @@
+Alemanha;V;5
+Austria;P;8
+Bulgaria;A;1
+Eslovaquia;B;4
+Espanha;V;3
+Finlandia;P;1
+França;A;5
+Grecia;B;2
+Hungria;V;1
+Italia;P;4
+Noruega;A;1
+Holanda;B;5
+Polonia;V;7
+Reino Unido;P;1
+Romenia;A;4
+Russia;B;3
+Balcans;V;8
+Turquia;P;3
+Ucrania;A;5
+Bielorussia;B;1
